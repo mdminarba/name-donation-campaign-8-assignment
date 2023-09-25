@@ -1,0 +1,140 @@
+[
+    {
+        "id": 1,
+        "picture": "item1.jpg",
+        "title": "Item 1",
+        "category": "Health",
+        "color_cat_bg": "#0052FF",
+        "color_card_bg": "#0052FF26",
+        "color_text_button": "#F87147",
+        "description": "Description for Item 1",
+        "price": 19.99
+    },
+    {
+        "id": 2,
+        "picture": "item2.jpg",
+        "title": "Item 2",
+        "category": "Category 2",
+        "color_cat_bg": "#ff444a33",
+        "color_card_bg": "#f8714733",
+        "color_text_button": "#F87147",
+        "description": "Description for Item 2",
+        "price": 29.99
+    },
+    {
+        "id": 3,
+        "picture": "item2.jpg",
+        "title": "Item 2",
+        "category": "Category 2",
+        "color_cat_bg": "#ff444a33",
+        "color_card_bg": "#f8714733",
+        "color_text_button": "#F87147",
+        "description": "Description for Item 2",
+        "price": 29.99
+    },
+    {
+        "id": 4,
+        "picture": "item2.jpg",
+        "title": "Item 2",
+        "category": "Category 2",
+        "color_cat_bg": "#ff444a33",
+        "color_card_bg": "#f8714733",
+        "color_text_button": "#F87147",
+        "description": "Description for Item 2",
+        "price": 29.99
+    },
+    {
+        "id": 5,
+        "picture": "item2.jpg",
+        "title": "Item 2",
+        "category": "Category 2",
+        "color_cat_bg": "#ff444a33",
+        "color_card_bg": "#f8714733",
+        "color_text_button": "#F87147",
+        "description": "Description for Item 2",
+        "price": 29.99
+    },
+    {
+        "id": 6,
+        "picture": "item2.jpg",
+        "title": "Item 2",
+        "category": "Category 2",
+        "color_cat_bg": "#ff444a33",
+        "color_card_bg": "#f8714733",
+        "color_text_button": "#F87147",
+        "description": "Description for Item 2",
+        "price": 29.99
+    },
+    
+    {
+        "id": 7,
+        "picture": "item2.jpg",
+        "title": "Item 2",
+        "category": "Category 2",
+        "color_cat_bg": "#ff444a33",
+        "color_card_bg": "#f8714733",
+        "color_text_button": "#F87147",
+        "description": "Description for Item 2",
+        "price": 29.99
+    },
+    
+    {
+        "id": 8,
+        "picture": "item2.jpg",
+        "title": "Item 2",
+        "category": "Category 2",
+        "color_cat_bg": "#ff444a33",
+        "color_card_bg": "#f8714733",
+        "color_text_button": "#F87147",
+        "description": "Description for Item 2",
+        "price": 29.99
+    },
+    
+    {
+        "id": 9,
+        "picture": "item2.jpg",
+        "title": "Item 2",
+        "category": "Category 2",
+        "color_cat_bg": "#ff444a33",
+        "color_card_bg": "#f8714733",
+        "color_text_button": "#F87147",
+        "description": "Description for Item 2",
+        "price": 29.99
+    },
+    
+    {
+        "id": 10,
+        "picture": "item2.jpg",
+        "title": "Item 2",
+        "category": "Category 2",
+        "color_cat_bg": "#ff444a33",
+        "color_card_bg": "#f8714733",
+        "color_text_button": "#F87147",
+        "description": "Description for Item 2",
+        "price": 29.99
+    },
+    
+    {
+        "id": 11,
+        "picture": "item2.jpg",
+        "title": "Item 2",
+        "category": "Category 2",
+        "color_cat_bg": "#ff444a33",
+        "color_card_bg": "#f8714733",
+        "color_text_button": "#F87147",
+        "description": "Description for Item 2",
+        "price": 29.99
+    },
+    
+    {
+        "id": 12,
+        "picture": "item2.jpg",
+        "title": "Item 2",
+        "category": "Category 2",
+        "color_cat_bg": "#ff444a33",
+        "color_card_bg": "#f8714733",
+        "color_text_button": "#F87147",
+        "description": "Description for Item 2",
+        "price": 29.99
+    }
+]
