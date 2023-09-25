@@ -8,12 +8,12 @@ import Banner from '../Banner/Banner'
 const Roots = () => {
   return (
     <div >
-      <div className="bann h-[600px]">
+      <div className=" bann lg:h-[600px] h-[300px]">
         <Header></Header>
         <Banner></Banner>
+        <Outlet></Outlet>
       </div>
-
-      <Outlet></Outlet>
+      
     </div>
   )
 }

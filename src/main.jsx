@@ -15,6 +15,7 @@ import Blogs from './Components/Blogs/Blogs';
 import Statiscs from './Components/Statiscs/Statiscs';
 import ArrorPage from './Components/ArrorPage/ArrorPage';
 import JobDetalis from './Components/jobDetalis/JobDetalis';
+import Detils from './Components/Detils/Detils';
 
 
 
@@ -31,30 +32,12 @@ const router = createBrowserRouter([
        
       },
       {
-        path:"/applied",
-        element:<Applied></Applied>
+        path:"/card/:id",
+        element:<Detils></Detils>,
+        loader: () => fetch('../data.json')
 
-      },
-      {
-        path:"/sobs",
-        element:<Jobs></Jobs>
+      }
 
-      },
-      {
-        path:"/blogs",
-        element:<Blogs></Blogs>
-
-      },
-      {
-        path:"/statiscs",
-        element:<Statiscs></Statiscs>
-
-      },
-      {
-        path:"/job/:id",
-        element:<JobDetalis></JobDetalis>
-
-      },
     ]
   },
 ]);

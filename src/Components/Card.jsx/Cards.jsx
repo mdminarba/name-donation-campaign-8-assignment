@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Card from "./Card";
 
 
+
 const Cards = () => {
   const [data, setdata] = useState([]);
   useEffect(() => {
@@ -10,18 +11,24 @@ const Cards = () => {
       .then((res) => res.json())
       .then((data) => setdata(data));
   }, []);
-  console.log(data);
+
+
+
 
   return (
   
-    <div className="grid gap-6 my-16 mx-14  lg:grid-cols-4 md:grid-cols-2 grid-cols-1 ">
+    <div className="grid gap-6 py-16 mx-14  lg:grid-cols-4 md:grid-cols-2 grid-cols-1 ">
       {
-        data.map(item=> <Card key={item.id} item={item}
+        data.map(item=> <Card key={item.id}
+
+           item={item}
           style={{
             background: item.color_card_bg,
             color: item.color_text_button,
+            
           }}></Card>)
       }
+
     </div>
   );
 };
