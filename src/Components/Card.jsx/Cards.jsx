@@ -14,7 +14,7 @@ const Cards = () => {
 
   return (
   
-    <div className="grid gap-4 mx-14  lg:grid-cols-4 md:grid-cols-2 grid-cols-1 ">
+    <div className="grid gap-6 my-16 mx-14  lg:grid-cols-4 md:grid-cols-2 grid-cols-1 ">
       {
         data.map(item=> <Card key={item.id} item={item}
           style={{
