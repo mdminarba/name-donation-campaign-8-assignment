@@ -13,6 +13,7 @@ const AddCard = ({card}) => {
         <h2 className='font-semibold mt-5 text-xl'>{title}</h2> 
         <p className=" font-bold">${price}</p>
         <Link to={`/card/${id}`}>        <button className="text-white p-2 rounded-md my-3 px-5" style={{ background: color_text_button  }}>View Details</button></Link>
+        
       </div>
       
     </div>

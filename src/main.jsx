@@ -12,6 +12,9 @@ import Roots from './Components/Root/Roots';
 import ArrorPage from './Components/ArrorPage/ArrorPage';
 import Detils from './Components/Detils/Detils';
 import Donation from './Components/Statiscs/Donation';
+import PieChart from './Components/PieChart/PieChart';
+
+
 
 
 
@@ -28,6 +31,12 @@ const router = createBrowserRouter([
        
       },
       {
+        path:'/statistics',
+        element: <PieChart></PieChart>,
+        loader: () => fetch('/data.json')
+
+      },
+      {
         path:'/donation',
         element:<Donation></Donation>,
         loader: () => fetch('/data.json')
@@ -39,7 +48,7 @@ const router = createBrowserRouter([
         loader: () => fetch('/data.json')
 
       }
-
+      
     ]
   },
 ]);

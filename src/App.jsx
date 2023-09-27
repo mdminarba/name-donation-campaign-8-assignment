@@ -1,35 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+/* App.js */
+import React, { Component } from 'react';
+import CanvasJSReact from '@canvasjs/react-charts';
+//var CanvasJSReact = require('@canvasjs/react-charts');
+ 
+var CanvasJS = CanvasJSReact.CanvasJS;
+var CanvasJSChart = CanvasJSReact.CanvasJSChart;
+ 
+class App extends Component {	
+	render() {
+		const options = {
+			animationEnabled: true,
+			exportEnabled: true,
+			theme: "dark2", // "light1", "dark1", "dark2"
+			title:{
+				text: "Trip Expenses"
+			},
+			data: [{
+				type: "pie",
+				indexLabel: "{label}: {y}%",		
+				startAngle: -90,
+				dataPoints: [
+					{ y: 20, label: "Airfare" },
+					{ y: 24, label: "Food & Drinks" },
+					{ y: 20, label: "Accomodation" },
+					{ y: 14, label: "Transportation" },
+					{ y: 12, label: "Activities" },
+					{ y: 10, label: "Misc" }	
+				]
+			}]
+		}
+		
+		return (
+		<div>
+			<CanvasJSChart options = {options} 
+				/* onRef={ref => this.chart = ref} */
+			/>
+			{/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
+		</div>
+		);
+	}
 }
+ 
+module.exports = App;    
 
 export default App

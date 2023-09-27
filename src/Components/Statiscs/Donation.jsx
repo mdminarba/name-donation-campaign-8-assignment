@@ -8,7 +8,7 @@ import AddCard from './AddCard';
 const Donation = () => {
     const cards = useLoaderData();
     const [showcard, setCard]=useState([]);
-    const [showAll, setshowAl]=useState(4);
+    const [showAll, setshowAll]=useState(4);
     useEffect(()=>{
         const storedCardId = getStoredAddCard();
         if(cards.length > 0){
@@ -35,9 +35,9 @@ const Donation = () => {
       
     </div>
     <div className="text-center  mt-4 ">
-      <div className={showAll === cards.length && 'hidden'  }>
+      <div className={showAll === cards.length ? 'hidden' : "" }>
       <button
-      onClick={() => setshowAl(cards.length)}
+      onClick={() => setshowAll(cards.length)}
        className="bg-[#009444] text-white font-bold p-2 rounded-md my-3 px-5" >See All</button>
       </div>
       </div>
